@@ -1,0 +1,372 @@
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .authentication-app-logo {
+    animation: App-logo-spin infinite 40s linear;
+    height: 40px;
+    width: 40px;
+  }
+  .authentication_logo_word{
+    width: 120px;
+    margin-bottom: 6px;
+  }
+ .mainSection{
+   display: none;
+ }
+ .navSection {
+  background-color: black !important;
+  display: none !important;
+
+ }
+  .rightSection {
+    padding: 2%;
+  }
+  .sign-in-up-container {
+    padding: 10px !important;
+  }
+  .signin-title {
+    color: blue !important;
+    padding: 6px !important;
+  }
+  .signup-title {
+    color: blue !important;
+    padding: 6px !important;
+  }
+  .Login {
+    padding-top: 60px;
+  }
+  .input_control {
+    display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .btn_primary {
+    color: #fff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .language_dropdown {
+    width: 35% !important;
+    float: right;
+    background-color: rgb(204, 247, 114) !important;
+    color: black !important;
+    display: inline-table !important;
+  }
+  .language_box {
+    margin-top: 0;
+  }
+.language_box div:hover{
+   background-color: #e2ffff;
+}
+.mr-auto{
+  background-color: #2B2F43;
+}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  .authentication-app-logo {
+    animation: App-logo-spin infinite 40s linear;
+    height: 40px;
+    width: 40px;
+  }
+  .authentication_logo_word{
+    width: 120px;
+    margin-bottom: 6px;
+  }
+  .mainSection{
+    display: none;
+  }
+  .navSection {
+   background-color: black !important;
+   display: none !important;
+  }
+   .rightSection {
+     padding: 2%;
+   }
+   .sign-in-up-container {
+     padding: 10px !important;
+   }
+   .signin-title {
+    padding: 3px;
+    text-decoration: none;
+    color: blue !important;
+    cursor: pointer;
+    transition: font-size 0.5s ease 0s;
+   }
+   .signup-title {
+    padding: 3px;
+  text-decoration: none;
+  color: blue !important;
+  cursor: pointer;
+  transition: font-size 0.5s ease 0s;
+   }
+   .Login {
+     padding-top: 60px;
+   }
+   input:focus {
+    outline-width: 0;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  } 
+  .input_control {
+    display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .btn_primary {
+    color: #fff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .language_dropdown {
+    width: 35% !important;
+    float: right;
+    background-color: rgb(204, 247, 114) !important;
+    color: black !important;
+    display: inline-table !important;
+  }
+  .language_box {
+    margin-top: 0;
+  }
+.language_box div:hover{
+   background-color: #e2ffff;
+}
+.mr-auto{
+  background-color: #2B2F43;
+}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .language_box {
+    margin-top: 0;
+  }
+.language_box div:hover{
+   background-color: #e2ffff;
+}
+.App {
+  text-align: center;
+}
+.authentication_logo_word {
+  width: 150px !important;
+  margin-bottom: 4px !important;
+}
+.authentication-app-logo {
+  animation: App-logo-spin infinite 40s linear;
+  height: 45px;
+  width: 45px;
+}
+.App-image {
+  animation: App-logo-spin infinite 1000s linear;
+  height: 600px;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.foo {
+  width: 10pc;
+}
+.barBaz {
+  color: tomato;
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+
+  }
+  .signupForm {
+    margin: 0px 6% 0px 6%;
+    line-height: 1.8;
+  }
+.nav-wrapper {
+  padding: 10px;
+}
+  .loginForm {
+
+    border: none;
+    padding: 0;
+    line-height: 1.8;
+    margin: 0px 6% 0px 6% !important;
+  }
+}
+
+.mainSection {
+  display: -webkit-box;
+  height: stretch;
+}
+.leftSection {
+  width: 65%;
+  background-color: #1b1c1d;
+}
+.leftSection img {
+  width: 100%;
+  height: stretch;
+}
+.rightSection {
+  width: 35%;
+
+}
+.sign-in-up-container {
+  text-align-last: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.signin-title {
+  font-size: 25px;
+  padding: 3px;
+  text-decoration: none;
+  color: #1da1f2!important;
+  cursor: pointer;
+  transition: font-size 0.5s ease 0s;
+}
+.signup-title {
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #1da1f2!important;
+    padding: 3px;
+    transition: font-size 0.5s ease 0s;
+}
+.cursor {
+  cursor: pointer;
+  color: #1da1f2!important;
+}
+.checkbox_label span {
+  padding: 7px;
+}
+.mr-auto {
+  padding: 0 40px 0 40px;
+}
+.navSection {
+  position: absolute;
+  background-color: transparent;
+}
+.codeColor {
+color: black !important;
+}
+.wrap {
+  height:stretch;
+}
+.login-need-help {
+  padding: 4px;
+}
+.forgot-password-link {
+    color: #1da1f2!important;
+    cursor: pointer;
+}
+input:focus {
+  outline-width: 0;
+}
+input:focus,
+select:focus,
+textarea:focus, 
+button:focus {
+    outline: none;
+}
+.input_control {
+  display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.input_control::placeholder {
+   color: #cdcfd0;
+}
+  .btn_primary {
+    color: #fff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  label {
+    padding: 5px;
+  }
+  .language_dropdown {
+    width: 35% !important;
+    float: right;
+    background-color: rgb(204, 247, 114) !important;
+    color: black !important;
+    display: inline-table !important;
+  }
+  .activeMenu{
+    border-bottom: 1px solid white;
+  }
+
+}

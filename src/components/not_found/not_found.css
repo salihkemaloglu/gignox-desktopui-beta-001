@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.oops {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 230px;
+  margin: 0px;
+  font-weight: 900;
+  width: min-content;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url('../../app_root/images/not_found_backgroung.jpg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.pagenotfound  {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0px;
+   width: 100%;
+   text-align: center
+}
+
+.detail {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0px;
+   width: 100%;
+   text-align: center
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .oops {
+      font-size: 90px;
+    }
+    .pagenotfound {
+      text-align: center;
+    }
+    .detail {
+      text-align: center;
+    }
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) { 
+
+  .oops {
+    font-size: 15 0px;
+  }
+  .pagenotfound {
+    text-align: center;
+  }
+  .detail {
+    text-align: center;
+  }
+}

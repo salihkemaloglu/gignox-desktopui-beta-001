@@ -1,18 +1,34 @@
 import * as React from 'react';
-import {  SignInUp, NavMenu } from './components';
+import { NavMenu, TopMenuGeneral, TopMenuPrivate } from './components';
 
-export const App: React.StatelessComponent<{}> = (props) => {
+export const AppNavMenuLayout = props => {
+  return (
+    <div className='main-nav'>
+      <TopMenuPrivate />
+      <div className="left_side_bar" id="left_sidebar">
+        <NavMenu />
+        {props.children}
+      </div>
 
-  if (localStorage.getItem("set") === "true"){
-    return (
-    
-      <NavMenu />
-    );
-  }
-  else{
-    return (
-      <SignInUp />
-    );
-  }
- 
+    </div>
+  );
+};
+export const AppGeneralLayout = props => {
+  return (
+    <div className='main-nav'>
+      <TopMenuGeneral />
+      {props.children}
+    </div>
+  );
+};
+
+export const AppPrivateLayout = props => {
+  return (
+    <div className='main-nav'>
+      <TopMenuPrivate />
+      <div>
+        {props.children}
+      </div>
+    </div>
+  );
 };
