@@ -1,7 +1,7 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-
+const { exec } = require('child_process');
 const path = require('path');
 const url = require('url');
 const isDev = require('electron-is-dev');
@@ -16,6 +16,14 @@ function createWindow() {
 
 app.on('ready', createWindow);
 
+exec('dir', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`exec error: ${error}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
+  console.log(`stderr: ${stderr}`);
+});
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();

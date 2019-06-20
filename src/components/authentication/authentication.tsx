@@ -29,7 +29,6 @@ export const Authentication = () => {
   const [alreadyExistUserWarning, setalreadyExistUserWarning] = useState("nonExist");
   const [passwordStrenghtWidth, setpasswordStrenghtWidth] = useState("");
   const [passwordStrenghtColor, setpasswordStrenghtColor] = useState("off");
-  const [activeMenu, setActiveMenu] = React.useState("home")
   let [loginForm, setLoginForm] = React.useState("active")
   let loginAttemptCount = 0;
   var userLogin = new UserLogin();
@@ -337,12 +336,6 @@ export const Authentication = () => {
                 <img src={logo} className="authentication-app-logo" alt="logo" />
                 <img src={logoGignox} className="authentication_logo_word" alt="logo" />
               </a>
-            </Menu.Item>
-            <Menu.Item as='div' borderless style={{ left: '50px' }}>
-              <Menu.Item as='a' className={activeMenu == "home" ? "activeMenu" : ""} onClick={() => setActiveMenu("home")} style={{ color: 'white' }}>Home</Menu.Item>
-              <Menu.Item as='a' className={activeMenu == "about" ? "activeMenu" : ""} onClick={() => setActiveMenu("about")} style={{ color: 'white' }}>About</Menu.Item>
-              <Menu.Item as='a' className={activeMenu == "contact" ? "activeMenu" : ""} onClick={() => setActiveMenu("contact")} style={{ color: 'white' }}>Contact</Menu.Item>
-              <Menu.Item as='a' className={activeMenu == "donation" ? "activeMenu" : ""} onClick={() => setActiveMenu("donation")} style={{ color: 'white' }}>Donation</Menu.Item>
             </Menu.Item>
           </Menu>
         </Segment>
